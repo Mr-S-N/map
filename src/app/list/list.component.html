@@ -1,0 +1,35 @@
+
+<div id="fixer"></div>
+
+
+<div class="container">
+
+  <table class="table table-fluid table-striped table-hover" id="myTable">
+    <thead>
+    <tr>
+      <th>City</th>
+      <th>Address</th>
+      <th>Info</th></tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let d of data">
+
+      <td> {{d.cityEN}}</td>
+      <td> {{d.fullAddressEn}}</td>
+
+      <td> <button type="button"  (click)="info(d)" class="btn btn-info">Info</button></td>
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<button *ngIf="isLoading" class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+
+<button id="up" *ngIf="isShow" (click)="gotoTop()">up</button>
+

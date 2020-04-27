@@ -1,0 +1,44 @@
+<div id="fixer"></div>
+
+<div class="container">
+  <div *ngIf="!isloged">
+
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+
+        <form  #loginform="ngForm">
+          <input type="text" id="login" class="fadeIn second"  required ngModel  name="login" placeholder="login">
+          <input type="password" id="password" class="fadeIn third" required ngModel  name="password"  placeholder="password">
+          <input  [disabled]="loginform.invalid" type="submit" class="fadeIn fourth" (click)="Login(loginform)" value="Log In">
+        </form>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isloged">
+
+    <div *ngFor="let d of reqs">
+      <div class="info">
+       <h6>From:</h6>
+        <br>
+        <p>{{d.email}}</p>
+<h6>Map:</h6>
+        <br>
+        <div id="map">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<div id="fixer"></div>

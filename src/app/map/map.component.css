@@ -1,0 +1,10 @@
+#fixer{
+  margin-top: 70px;
+}
+#map{
+  height: 800px;
+  width: 95%;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin: 0 auto;
+}

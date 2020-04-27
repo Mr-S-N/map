@@ -1,0 +1,22 @@
+#fixer{
+  margin-top: 70px;
+}
+.info{
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+
+
+}
+
+#map{
+  border-radius: 25px;
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+
+
+}
